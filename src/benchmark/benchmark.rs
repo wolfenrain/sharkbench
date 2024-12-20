@@ -15,10 +15,6 @@ services:
       - "3000:3000"
     sysctls:
       - net.ipv4.ip_local_port_range=1024 65535
-    deploy:
-      resources:
-        limits:
-          cpus: "1.0"
 
 networks:
   default:
